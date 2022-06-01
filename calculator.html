@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="1st" type="number" placeholder="enter 1st Number">
+    <input id="2nd" type="number" placeholder="enter 1st Number">
+<br> <br>
+    <button onClick="add()">Add</button>
+    <button onClick="subtract()">Subtract</button>
+    <button onClick="multiply()">Multiply</button>
+    <button onClick="divide()">Divide</button>
+</body>
+</html>
+
+<script>
+    
+    function add () {
+        let first_value = document.getElementById("1st").value;
+        let second_value = document.getElementById("2nd").value;
+
+        alert (Number(first_value)+Number(second_value));
+    }
+
+    function subtract () {
+        let first_value = document.getElementById("1st").value;
+        let second_value = document.getElementById("2nd").value;
+
+        alert (first_value-second_value);
+    }
+
+    function multiply () {
+        let first_value = document.getElementById("1st").value;
+        let second_value = document.getElementById("2nd").value;
+
+        alert (first_value*second_value);
+    }
+
+    function divide () {
+        let first_value = document.getElementById("1st").value;
+        let second_value = document.getElementById("2nd").value;
+
+        alert (first_value/second_value);
+    }
+
+</script>
